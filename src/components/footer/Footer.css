@@ -1,0 +1,156 @@
+.footer {
+    background-color: var(--background);
+    padding: 0 48px 40px;
+    color: var(--foreground);
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.footer-top {
+    flex: 1;
+}
+
+.cta-title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+.cta-title .italic {
+    font-family: serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #666;
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    font-size: 1.1rem;
+}
+
+.email-button:hover {
+    background-color: #000;
+}
+
+.arrow-icon {
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 4px;
+    padding: 2px;
+    margin-left: 4px;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    flex: 1.5;
+}
+
+.column-label {
+    font-size: 1.25rem;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.column-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column-links a {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+}
+
+.column-links a:hover {
+    opacity: 0.6;
+}
+
+.footer-branding {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+.branding-text {
+    font-size: 18vw;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.8;
+    margin: 0;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+
+.branding-char {
+    display: inline-block;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-main-content {
+        gap: 40px;
+    }
+
+    .cta-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-main-content {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer-links-grid {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0 24px 20px;
+    }
+
+    .cta-title {
+        font-size: 3rem;
+    }
+
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

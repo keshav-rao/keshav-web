@@ -1,0 +1,97 @@
+/* Vertical Sidebar and Menu Styles */
+.vertical-sidebar {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.menu-dot {
+    width: 4px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.hero-italic {
+    font-family: var(--font-outfit);
+    font-style: italic;
+    font-weight: 100;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 32px;
+    font-family: var(--font-outfit);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+}
+
+.menu-container {
+    background-color: #e0e0e0;
+    border-radius: 2rem;
+    width: 225px;
+    height: 275px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 2.25em 2.5em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+}
+
+.menu-link {
+    font-family: var(--font-outfit);
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--foreground);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    font-style: italic;
+    transform: translateX(10px);
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.close-button:hover {
+    transform: rotate(90deg) scale(1.2);
+}
+
+.hero-name {
+    font-size: 80px;
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    white-space: nowrap;
+    color: var(--foreground);
+    letter-spacing: -0.05em;
+    opacity: 0.9;
+}

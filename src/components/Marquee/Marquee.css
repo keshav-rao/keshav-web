@@ -1,0 +1,49 @@
+.marquee-section {
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    padding: 1.5rem 0;
+    z-index: 10;
+}
+
+.marquee-wrapper {
+    display: flex;
+    white-space: nowrap;
+}
+
+.marquee-slider {
+    display: flex;
+    align-items: center;
+}
+
+.marquee-item {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.marquee-dash {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    opacity: 0.5;
+}
+
+.marquee-text {
+    font-family: var(--font-outfit), serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #1a1a1a;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .marquee-text {
+        font-size: 1.5rem;
+    }
+
+    .marquee-section {
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,21 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: black;
+    border-radius: 9999px;
+    pointer-events: none;
+    z-index: 10000;
+    visibility: hidden;
+    transform-origin: center center;
+    will-change: transform, background-color;
+    transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .cursor {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,124 @@
+.about-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #f5f5f5;
+    /* Light off-white from screenshot */
+}
+
+.about-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centering image and text wrapper */
+    text-align: center;
+}
+
+.about-profile-wrapper {
+    position: relative;
+    margin-bottom: 6rem;
+    width: fit-content;
+}
+
+.about-image-container {
+    width: 350px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.about-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-dot {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-heading {
+    font-size: 5rem;
+    line-height: 1.1;
+    font-family: var(--font-outfit);
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.brand-name {
+    font-family: var(--font-playfair);
+    font-style: italic;
+    font-weight: 400;
+    color: #333;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    padding: 1rem 2.5rem;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: 9999px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #262626;
+    transform: translateY(-0.25rem);
+}
+
+@media (max-width: 1024px) {
+    .about-heading {
+        font-size: 3.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .about-heading {
+        font-size: 2.75rem;
+    }
+
+    .about-image-container {
+        width: 100%;
+        max-width: 300px;
+        height: 380px;
+    }
+}
