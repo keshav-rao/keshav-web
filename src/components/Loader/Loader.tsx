@@ -113,11 +113,11 @@ const Loader: React.FC<LoaderProps> = ({ onLoadingComplete }) => {
             <div className="loader-content">
                 <div className="status-list-wrapper">
                     <ul className="status-list" ref={statusListRef}>
-                        <li>// Initializing Neural Interface...</li>
-                        <li>// Decrypting Data Streams...</li>
-                        <li>// Synchronizing Parallel Realities...</li>
-                        <li>// Transmitting Quantum Signals...</li>
-                        <li>// Unlocking Digital Dimensions...</li>
+                        <li>{"// Initializing Neural Interface..."}</li>
+                        <li>{"// Decrypting Data Streams..."}</li>
+                        <li>{"// Synchronizing Parallel Realities..."}</li>
+                        <li>{"// Transmitting Quantum Signals..."}</li>
+                        <li>{"// Unlocking Digital Dimensions..."}</li>
                     </ul>
                 </div>
 
